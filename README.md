@@ -1,1 +1,1 @@
-This directory contains shell permissions tasks.
+ALU shell project
