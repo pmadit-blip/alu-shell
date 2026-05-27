@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$WATER $STIR" | tr 'water' '01234' | tr 'stir.' '01234' | xargs printf 'ibase=5;%s+%s\n' | bc | tr '01234567' 'bestchol'
+echo $((5#$(echo "$WATER" | tr 'water' '01234') + 5#$(echo "$STIR" | tr 'stir.' '01234'))) | tr '01234567' 'bestchol'
