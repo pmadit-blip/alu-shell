@@ -2,5 +2,5 @@
 # This script displays username, user id, and home directory from /etc/passwd
 while IFS=: read -r user pass uid gid info home sh
 do
-    echo "${user}:${uid}:${home}"
+    echo "$user:$uid:$home"
 done < /etc/passwd
